@@ -1,0 +1,167 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.contact_title {
+  position: relative;
+}
+.contact_title h1 {
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.contact_section {
+  display: flex;
+  gap: 150px;
+}
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact_left h1 {
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #fc00ff 80%, #40c9ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact_left p {
+  max-width: 550px;
+  color: #c4c3c3;
+  font-size: 20px;
+  line-height: 35px;
+}
+.contact_details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #c4c3c3;
+  font-size: 22px;
+}
+.contact_detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact_right label {
+  color: #c4c3c3;
+  font-size: 22px;
+  font-weight: 500;
+}
+.contact_right input {
+  border-bottom: 2px solid #e81cff;
+  border-right: 2px solid #e81cff;
+  width: 500px;
+  height: 50px;
+  padding-left: 20px;
+  border-radius: 4px;
+  color: #a0a0a0;
+  background: #32323c;
+  font-family: Outfit;
+  font-size: 20px;
+}
+.contact_right input:focus {
+  outline: none;
+  border-bottom: 2px solid #40c9ff;
+  border-right: 2px solid #40c9ff;
+}
+.contact_right textarea {
+  width: 500px;
+  border-bottom: 2px solid #e81cff;
+  border-right: 2px solid #e81cff;
+  padding: 25px;
+  border-radius: 4px;
+  color: #a0a0a0;
+  font-family: Outfit;
+  font-size: 20px;
+  background: #32323c;
+}
+.contact_right textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #40c9ff;
+  border-right: 2px solid #40c9ff;
+}
+/* .contact_submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #fc00ff -5.09%, #40c9ff 106.28%);
+    font-size: 22px;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+}
+.contact_submit:hover{
+    transform: scale(1.1);
+} */
+/* From Uiverse.io by gharsh11032000 */
+.contact_submit {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 20px 20px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.contact_submit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact_submit::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.contact_submit:hover::after {
+  filter: blur(30px);
+}
+
+.contact_submit:hover::before {
+  transform: rotate(-180deg);
+}
+
+.contact_submit:active::before {
+  scale: 0.7;
+}
