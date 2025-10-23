@@ -56,3 +56,38 @@
 .hero_resume:hover{
     box-shadow: 1px 1px 15px rgb(252, 0, 255);
 }
+
+/* Media Query */
+
+@media(max-width:768px){
+    .hero img{
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .hero h1{
+        font-size: 40px;
+        width: 90%;
+        /* margin-top: 20px; */
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 5px 0px;
+    }
+    .hero_action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero_connect{
+        padding: 20px 40px;
+        border-radius: 40px;
+
+    }
+    .hero_resume{
+        padding: 15px 40px;
+        border-radius: 40px;
+    }
+}

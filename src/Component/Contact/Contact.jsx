@@ -9,7 +9,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "13095912-aa55-4f4f-a5e5-78069af01443");
+    formData.append("access_key", "9dab20f9-e2f9-441a-a2d6-282709ee1b2c");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -38,8 +38,7 @@ const Contact = () => {
         <div className="contact_left">
           <h1>Let's talk</h1>
           <p>
-            I'm currently available to talk, currently looking for job with
-            skills and efforts.
+            I'm currently available to talk, so feel free to send me a message about anything thaat you want me to work on. You can contact anytime.
           </p>
           <div className="contact_details">
             <div className="contact_detail">

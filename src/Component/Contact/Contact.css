@@ -60,8 +60,6 @@
   font-weight: 500;
 }
 .contact_right input {
-  border-bottom: 2px solid #e81cff;
-  border-right: 2px solid #e81cff;
   width: 500px;
   height: 50px;
   padding-left: 20px;
@@ -73,13 +71,9 @@
 }
 .contact_right input:focus {
   outline: none;
-  border-bottom: 2px solid #40c9ff;
-  border-right: 2px solid #40c9ff;
 }
 .contact_right textarea {
   width: 500px;
-  border-bottom: 2px solid #e81cff;
-  border-right: 2px solid #e81cff;
   padding: 25px;
   border-radius: 4px;
   color: #a0a0a0;
@@ -89,24 +83,7 @@
 }
 .contact_right textarea:focus {
   outline: none;
-  border-bottom: 2px solid #40c9ff;
-  border-right: 2px solid #40c9ff;
 }
-/* .contact_submit{
-    border: none;
-    color: white;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #fc00ff -5.09%, #40c9ff 106.28%);
-    font-size: 22px;
-    padding: 15px 30px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 200px;
-}
-.contact_submit:hover{
-    transform: scale(1.1);
-} */
 /* From Uiverse.io by gharsh11032000 */
 .contact_submit {
   position: relative;
@@ -164,4 +141,45 @@
 
 .contact_submit:active::before {
   scale: 0.7;
+}
+/* Media Query */
+
+@media (max-width: 768px) {
+  .contact {
+    gap: 50px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .contact_title h1 {
+    padding: 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .contact_section {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .contact_left h1 {
+    font-size: 40px;
+  }
+  .contact_left p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contact_detail {
+    gap: 20px;
+  }
+  .contact_detail img {
+    width: 25px;
+  }
+  .contact_right label {
+    font-size: 20px;
+  }
+  .contact_right input {
+    width: 100%;
+    font-size: 18px;
+  }
+  .contact_right textarea {
+    width: 95%;
+  }
 }

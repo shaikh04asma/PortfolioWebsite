@@ -90,3 +90,51 @@
     transform: scale(1.05);
     transition: 0.3s;
 }
+/* Media Query  */
+@media (max-width : 768px){
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .about_title h1{
+        font-size: 40px;
+        padding: 0;
+    }
+    .about_section{
+        flex-direction: column;
+    }
+    .about_left{
+        display: none;
+    }
+    .about_para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about_skill{
+        gap: 30px;
+        align-items: center;
+    }
+    .about_skill p{
+        font-size: 20px;
+
+    }
+    .about_skill hr{
+        height: 6px;
+    }
+    .about_achievements{
+        justify-content: space-between;
+    }
+    .about_achievement{
+        gap: 10px;
+    }
+    .about_achievement h1{
+        font-size: 34px;
+        font-weight: 700;
+
+    }
+    .about_achievement p{
+        font-size: 16px;
+        text-align: center;
+    }
+}
