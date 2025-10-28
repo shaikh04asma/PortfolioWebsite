@@ -12,7 +12,7 @@ const Hero = () => {
         experience in H&M Comapny. </p>
         <div className="hero_action">
             <div className="hero_connect"><AnchorLink className="anchor_link" offset={50} href="#contact">Connect with me</AnchorLink></div>
-            <div className="hero_resume">My resume</div>
+            <div className="hero_resume" onClick={()=>window.open('/matiresume.pdf')}>My resume</div>
         </div>
     </div>
   )
